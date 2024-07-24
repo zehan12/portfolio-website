@@ -26,11 +26,11 @@ export const Header = () => {
                     <li>
                         <Link
                             className={cn(
-                                pathName === "/work" ? "text-green-500" : ""
+                                pathName === "/experience" ? "text-green-500" : ""
                             )}
-                            href={"/work"}
+                            href={"/experience"}
                         >
-                            Work
+                            Experience
                         </Link>
                     </li>
                 </ul>
