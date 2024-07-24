@@ -9,10 +9,10 @@ export const Header = () => {
     return (
         <header className="w-full h-10 flex items-center">
             <nav className="w-8/12 mx-auto flex justify-between">
-                <div className="text-2xl font-mono text-orange-700">
+                <div className="text-lg md:text-2xl font-mono text-orange-700">
                     zehan khan
                 </div>
-                <ul className="flex gap-5 text-2xl font-mono text-purple-500">
+                <ul className="flex gap-5 text-lg md:text-2xl font-mono text-purple-500">
                     <li>
                         <Link
                             className={cn(
