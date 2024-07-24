@@ -1,11 +1,12 @@
 import { RoughNotation } from "react-rough-notation";
+import Image from 'next/image';
 
 export default function Home() {
     return (
         <main>
             <div className="flex flex-col items-center justify-center main-container pt-10 md:pt-0 sm:pb-20 lg:pb-0">
                 <h1 className="text-[#0A5029] font-space text-xl mb-10 sm:pt-16 sm:text-3xl md:text-5xl lg:pt-20 lg:mb-0 lg:text-5xl leading-snug">
-                    Hi, I'm Zehan Khan.
+                    Hi, I&apos;m Zehan Khan.
                     <span className="text-amber-500">✰</span> <br />{" "}
                     <span className="text-orange-500">✺</span> A Full Stack
                     Software Engineer
@@ -18,7 +19,7 @@ export default function Home() {
             <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center gap-10 my-3">
                 <div className="flex flex-col justify-start gap-10 font-mono px-4 md:px-0 w-full md:w-3/6">
                     <p>
-                        <b className="text-4xl text-green-700">Hello,</b> I'm
+                        <b className="text-4xl text-green-700">Hello,</b> I&apos;m
                         Zehan, a dedicated and passionate{" "}
                         <RoughNotation
                             type="highlight"
@@ -79,7 +80,7 @@ export default function Home() {
                         .
                     </p>
                     <p>
-                        Currently, I'm immersed in exploring new challenges and
+                        Currently, I&apos;m immersed in exploring new challenges and
                         expanding my skill set. My recent endeavors include
                         integrating{" "}
                         <RoughNotation
@@ -165,7 +166,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="w-full flex items-center justify-center md:w-2/6">
-                    <img className="w-9/12" src="/me.jpg" alt="Zehan Khan" />
+                    <Image className="w-9/12" src="/me.jpg" alt="Zehan Khan" width={500} height={500} />
                 </div>
             </div>
         </main>
