@@ -10,7 +10,7 @@ import { LinkPreview } from "@/components/aceternity-ui/link-preview";
 import { useRouter } from "next/navigation";
 import AnimatedGreeting from "@/components/HeroSection/AnimateGreeting";
 import TypingEffect from "@/components/HeroSection/TypingEffect";
-import { WatchResume } from "@/components/WatchResume";
+// import { WatchResume } from "@/components/WatchResume";
 import { CallToActionSection } from "./CallToActionSection";
 
 export const HeroSection = () => {

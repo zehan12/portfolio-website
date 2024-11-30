@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Header } from "@/components/layout/Header";
-import { MobileHeader } from "@/components/mobile/MobileHeader";
+// import { Header } from "@/components/layout/Header";
+// import { MobileHeader } from "@/components/mobile/MobileHeader";
 
 
 export const metadata: Metadata = {
