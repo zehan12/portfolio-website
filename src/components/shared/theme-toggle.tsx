@@ -1,4 +1,3 @@
-
 "use client";
 import { AnimatePresence, motion } from "motion/react";
 import { CloudMoon, Sun } from "lucide-react";
@@ -24,7 +23,7 @@ export const ThemeToggle = () => {
     return (
         <Button
             variant={"ghost"}
-            className="overflow-hidden custom-btn"
+            className="overflow-hidden custom-btn h-8"
             onClick={toggleTheme}
         >
             <AnimatePresence mode="wait" initial={false}>
@@ -34,9 +33,9 @@ export const ThemeToggle = () => {
                     key={isDark.toString()}
                 >
                     {isDark ? (
-                        <CloudMoon className="text-[1.2rem]" />
-                    ) : (
                         <Sun className="text-[1.2rem]" />
+                    ) : (
+                        <CloudMoon className="text-[1.2rem]" />
                     )}
                 </motion.span>
             </AnimatePresence>

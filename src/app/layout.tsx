@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
 import { ThemeProvider } from "@/context/theme-providers";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +19,20 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={inter.className}>
+        <html lang="en" suppressHydrationWarning={true}>
+            <body className={cn(inter.className)} >
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <Header />
-                    {children}
+                    <ScrollArea className="h-screen">
+                        <main>
+                            {children}
+                        </main>
+                        <Toaster />
+                    </ScrollArea>
                 </ThemeProvider>
             </body>
         </html>
