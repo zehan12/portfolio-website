@@ -1,6 +1,6 @@
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { LinkPreview } from "./aceternity-ui/link-preview";
+import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
+import { LinkPreview } from "../../aceternity-ui/link-preview";
 
 export const Footer = () => {
 
