@@ -3,12 +3,18 @@ import autoprefixer from "autoprefixer";
 import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import path from "path";
 
 export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [tailwindcss, autoprefixer],
+    css: {
+        postcss: {
+            plugins: [tailwindcss, autoprefixer],
+        },
     },
-  },
-  plugins: [reactRouter(), tsconfigPaths()],
+    plugins: [reactRouter(), tsconfigPaths()],
+    resolve: {
+        alias: {
+            "~": path.resolve(__dirname, "./app"),
+        },
+    },
 });
