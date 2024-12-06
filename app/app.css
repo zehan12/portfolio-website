@@ -4,7 +4,17 @@
 
 html,
 body {
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+@layer base {
+    .text-edge-outline {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    }
+
+    .dot {
+        -webkit-text-stroke: 0 !important;
+    }
 }
