@@ -1,6 +1,14 @@
 import type { Config } from "tailwindcss";
 
 export default {
+    safelist: [
+        {
+            pattern: /text-(red|green|blue|yellow|indigo|purple|pink)-500/,
+        },
+        {
+            pattern: /bg-(red|green|blue|yellow|indigo|purple|pink)-500\/15/,
+        },
+    ],
     darkMode: ["class"],
     content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
     theme: {
@@ -100,6 +108,20 @@ export default {
                 "fade-left": "fade-left 3s ease-in-out forwards",
                 "fade-right": "fade-right 3s ease-in-out forwards",
                 color: "color 5s infinite alternate",
+                fadeLeft: "fadeLeft 3s linear infinite",
+                fadeRight: "fadeRight 3s linear infinite",
+                // Custom delays
+                "fadeLeft-delay-750": "fadeLeft 3s linear infinite 0.75s",
+                "fadeRight-delay-750": "fadeRight 3s linear infinite 0.75s",
+                "fadeLeft-delay-1500": "fadeLeft 3s linear infinite 1.5s",
+                "fadeRight-delay-1500": "fadeRight 3s linear infinite 1.5s",
+                "fadeLeft-delay-2250": "fadeLeft 3s linear infinite 2.25s",
+                "fadeRight-delay-2250": "fadeRight 3s linear infinite 2.25s",
+            },
+            animationDelay: {
+                750: "750ms",
+                1500: "1500ms",
+                2250: "2250ms",
             },
             borderRadius: {
                 lg: "var(--radius)",
@@ -141,11 +163,6 @@ export default {
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
                 chart: {
-                    "1": "hsl(var(--chart-1))",
-                    "2": "hsl(var(--chart-2))",
-                    "3": "hsl(var(--chart-3))",
-                    "4": "hsl(var(--chart-4))",
-                    "5": "hsl(var(--chart-5))",
                     "1": "hsl(var(--chart-1))",
                     "2": "hsl(var(--chart-2))",
                     "3": "hsl(var(--chart-3))",
